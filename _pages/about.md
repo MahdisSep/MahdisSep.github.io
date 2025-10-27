@@ -1025,8 +1025,8 @@ For additional details about each experience, please see my CV or contact me.
     </div>
     <div class="experience-role">Shahid Beheshti University, Issued Summer 2022</div>
      <a class="cert-link" href="https://drive.google.com/file/d/1zhIBX-m2hb-LuaCxnPBB0B6O9MrOv_Pr/view?usp=sharing">View credential</a>
+  </div>   
   <div class="experience-logo">
-  </div>
     <img src="../images/Sbu-logo.png" alt="sbu" />
   </div>
 </div>
