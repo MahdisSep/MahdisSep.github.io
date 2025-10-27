@@ -6,8 +6,8 @@ main:
   - title: "Publications"
     url: "/#publications"
 
-  - title: "Projects"
-    url: "/#projects"
+  # - title: "Projects"
+  #   url: "/#projects"
 
   - title: "Education"
     url: "/#education"
@@ -15,12 +15,12 @@ main:
   - title: "Experience"
     url: "/#experience"
 
-  - title: "Endorsements"
-    url: "/#endorsements"
+  # - title: "Endorsements"
+  #   url: "/#endorsements"
 
   - title: "Courses"
     url: "/#courses"
 
-  - title: "Hobbies"
-    url: "/#hobbies"
+  # - title: "Hobbies"
+  #   url: "/#hobbies"
 
