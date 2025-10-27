@@ -175,73 +175,119 @@ redirect_from:
   }
 
   /* 教育和工作经历卡片样式 */
-  .experience-card, .education-card {
-    display: flex;
+  /* ===== Experience & Education Cards (gradient + soft glow) ===== */
+.experience-card,
+.education-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+  padding: 1.25rem 1.5rem;
+
+  /* ظاهر جدید مشابه exp-card */
+  border-radius: var(--exp-radius, 12px);
+  border: var(--exp-bw, 2px) solid transparent;
+  background:
+    linear-gradient(var(--exp-bg, #fff), var(--exp-bg, #fff)) padding-box,
+    linear-gradient(135deg, var(--exp-grad-1, #d1e5f8), var(--exp-grad-2, #a7d8f5) 55%, var(--exp-grad-3, #cde4fa)) border-box;
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04), var(--exp-glow, 0 0 8px rgba(33, 150, 243, 0.08));
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.experience-card:hover,
+.education-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08), var(--exp-glow-hover, 0 0 14px rgba(33, 150, 243, 0.15));
+}
+
+/* Logo section */
+.experience-logo,
+.education-logo {
+  flex-shrink: 0;
+  width: var(--exp-logo, 80px);
+  height: var(--exp-logo, 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--exp-border, #e2e8f0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.experience-logo img,
+.education-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Info section */
+.experience-info,
+.education-info {
+  flex: 1;
+  display: grid;
+  gap: 0.25rem;
+}
+
+/* Titles */
+.experience-title,
+.education-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #143a52;
+  margin: 0;
+}
+
+.experience-title a,
+.education-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.experience-title a:hover,
+.education-title a:hover {
+  color: var(--exp-accent, #0078d7);
+}
+
+/* Role / Subtitle */
+.experience-role,
+.education-role {
+  color: #5b6b7a;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Topics or description */
+.experience-topics,
+.education-topics {
+  color: #384b5a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive (mobile layout) */
+@media (max-width: 640px) {
+  .experience-card,
+  .education-card {
+    flex-direction: column;
     align-items: center;
-    gap: 25px;
-    margin-bottom: 15px;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    border: 1px solid #e9ecef;
+    text-align: center;
+    padding: 1rem;
   }
 
-  .experience-card:hover, .education-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-color: #dee2e6;
-  }
-
-  .experience-info, .education-info {
-    flex: 1;
-  }
-
-  .experience-logo, .education-logo {
-    flex-shrink: 0;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
+  .experience-logo,
+  .education-logo {
+    width: 70px;
+    height: 70px;
     border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   }
+}
 
-  .experience-logo img, .education-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  .experience-title, .education-title {
-    font-size: 1.2em;
-    margin-bottom: 8px;
-    color: #2c3e50;
-  }
-
-  .experience-title a, .education-title a {
-    color: #2c3e50;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .experience-title a:hover, .education-title a:hover {
-    color: #3498db;
-  }
-
-  .experience-role, .education-role {
-    color: #666;
-    font-style: italic;
-    margin-bottom: 5px;
-  }
-
-  .experience-topics, .education-topics {
-    color: #666;
-    font-style: italic;
-  }
 
   .section-title {
     font-size: 1.8em;
