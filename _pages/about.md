@@ -1001,41 +1001,50 @@ For additional details about each experience, please see my CV or contact me.
     <a class="cert-link" href="https://drive.google.com/file/d/1gukQEzuG4HfpNKtIw4E7LIabVlXEetH9/view?usp=sharing">View credential</a>
   </div>
   <div class="experience-logo">
-    <img src="../images/irans.jpg" alt="Logo" />
+    <img src="../images/iran.png" alt="Logo" />
   </div>
 </div>
 
-   <!-- <article class="cert-card">
-    <img class="cert-card__logo" src="/images/Sbu-logo.png" alt="sbu">
-    <div class="cert-card__body">
-      <h3 class="cert-card__title">Introduction to linux</h3>
-      <div class="cert-card__org">Shahid Beheshti University</div>
-      <div class="cert-card__meta">Issued Summer 2022</div>
-      <a class="cert-link" href="https://drive.google.com/file/d/1Uc0ZVzI_57kB7DJfhhPUF26RCZf9XE-r/view?usp=sharing">View credential</a>
+<div class="experience-card">
+  <div class="experience-info">
+    <div class="experience-title">
+      Introduction to linux
     </div>
-  </article>
+    <div class="experience-role">Shahid Beheshti University, Issued Summer 2022</div>
+    <a class="cert-link" href="https://drive.google.com/file/d/1Uc0ZVzI_57kB7DJfhhPUF26RCZf9XE-r/view?usp=sharing">View credential</a>
+  </div>
+  <div class="experience-logo">
+    <img src="../images/Sbu-logo.png" alt="sbu" />
+  </div>
+</div>
 
-   <article class="cert-card">
-    <img class="cert-card__logo" src="/images/Sbu-logo.png" alt="sbu">
-    <div class="cert-card__body">
-      <h3 class="cert-card__title">Fundamentals of Python</h3>
-      <div class="cert-card__org">Shahid Beheshti University</div>
-      <div class="cert-card__meta">Issued Summer 2022</div>
-      <a class="cert-link" href="https://drive.google.com/file/d/1zhIBX-m2hb-LuaCxnPBB0B6O9MrOv_Pr/view?usp=sharing">View credential</a>
+<div class="experience-card">
+  <div class="experience-info">
+    <div class="experience-title">
+      Fundamentals of Python
     </div>
-  </article>
+    <div class="experience-role">Shahid Beheshti University, Issued Summer 2022</div>
+  </div>
+  <a class="cert-link" href="https://drive.google.com/file/d/1zhIBX-m2hb-LuaCxnPBB0B6O9MrOv_Pr/view?usp=sharing">View credential</a>
+  <div class="experience-logo">
+    <img src="../images/Sbu-logo.png" alt="sbu" />
+  </div>
+</div>
 
-   <article class="cert-card">
-    <img class="cert-card__logo" src="/images/Sbu-logo.png" alt="sbu">
-    <div class="cert-card__body">
-      <h3 class="cert-card__title">Computer vision</h3>
-      <div class="cert-card__org">Shahid Beheshti University</div>
-      <div class="cert-card__meta">Issued Winter 2023</div>
-      <a class="cert-link" href="https://drive.google.com/file/d/1CHhlvweQD3QqxTDmC95tLj4Jf80qj20-/view?usp=sharing">View credential</a>
+<div class="experience-card">
+  <div class="experience-info">
+    <div class="experience-title">
+      Computer vision
     </div>
-  </article>
+    <div class="experience-role">Shahid Beheshti University, Issued Winter 2023</div>
+    <a class="cert-link" href="https://drive.google.com/file/d/1CHhlvweQD3QqxTDmC95tLj4Jf80qj20-/view?usp=sharing">View credential</a>
+  </div>
+  <div class="experience-logo">
+    <img src="../images/Sbu-logo.png" alt="sbu" />
+  </div>
+</div>
 
-</section> -->
+</section>
 
 
 <!-- <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=HVZ1dytXl71ZnJux6Lqi9u_XgGZap1uRgqVjt2_TcTc"></script> -->
