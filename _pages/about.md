@@ -429,7 +429,6 @@ redirect_from:
   color: #5b6b7a;
 }
 
-/* Action chips هماهنگ با exp badges */
 .pub-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1006,9 +1005,11 @@ I’m eager to pursue **Master’s or direct PhD opportunities** where I can con
 Outside of academia, I enjoy writing, reading books, and listening to music, which help me stay creative and inspired.
 
 You can reach me via:
-- [Email](mailto:Mahdissep18@gmail.com)
-- [Telegram](https://t.me/mahdissep)
 
+   <div class="edu-metrics" aria-label="Education metrics">
+      <span class="chip" title="Email">[Email](mailto:Mahdissep18@gmail.com)</span>
+      <span class="chip" title="Telegram">[Telegram](https://t.me/mahdissep)</span>
+    </div>
 
 
 # Education
