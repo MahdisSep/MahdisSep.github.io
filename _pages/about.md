@@ -184,7 +184,6 @@ redirect_from:
   margin-bottom: 1rem;
   padding: 1.25rem 1.5rem;
 
-  /* ظاهر جدید مشابه exp-card */
   border-radius: var(--exp-radius, 12px);
   border: var(--exp-bw, 2px) solid transparent;
   background:
@@ -297,39 +296,8 @@ redirect_from:
     border-bottom: 2px solid #ecf0f1;
   }
 
-  /* 奖学金和荣誉部分样式 */
-  .honors-list {
-    list-style: none;
-    padding: 0;
-  }
-
-  .honors-list li {
-    margin-bottom: 15px;
-    padding: 15px 20px;
-    background: #f8f9fa;
-    border-radius: 8px;
-    border-left: 4px solid #3498db;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .honors-list li:hover {
-    transform: translateX(5px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .honors-list li strong {
-    color: #2c3e50;
-  }
-
-  .honors-list li a {
-    color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .honors-list li a:hover {
-    color: #2980b9;
-  }
+ 
+  
 
   /* 服务部分样式 */
   .service-section {
@@ -371,27 +339,6 @@ redirect_from:
     color: #2980b9;
   }
 
-.hobbies-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.hobbies-gallery img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hobbies-gallery img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
-}
-
 /* Force horizontal images into one row */
 .wide-row {
   grid-column: 1 / -1; /* span full width of grid */
@@ -401,131 +348,13 @@ redirect_from:
 }
 
 
-/* === Projects section === */
-.projects-section {
-  margin: 5px 0 0px;
-}
-
-.projects-title {
-  font-size: 1.8em;
-  color: #2c3e50;
-  margin: 0 0 16px;
-  padding-bottom: 0px;
-  border-bottom: 2px solid #ecf0f1;
-}
-
-/* 2 columns on wide screens, 1 column on mobile */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-@media (max-width: 720px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Card */
-.project-card {
-  background: #fff;
-  border: 1px solid #e9ecef;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,.05);
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,.08);
-  border-color: #dee2e6;
-}
-
-.project-media {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  overflow: hidden;
-  background: #fff; /* white background instead of grey */
-}
-
-.project-media img,
-.project-media video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;     /* show full image */
-  object-position: center; /* centerize horizontally & vertically */
-  display: block;
-}
-
-
-/* Optional subtle zoom on hover for a lively feel */
-.project-card:hover .project-media img,
-.project-card:hover .project-media video {
-  transform: scale(1.03);
-  transition: transform .3s ease;
-}
-
-/* Title + actions */
-.project-body {
-  padding: 12px 14px 14px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 10px;
-}
-
-.project-title {
-  margin: 0;
-  font-weight: 700;
-  color: #2c3e50;
-  font-size: 1.02rem;
-  line-height: 1.3;
-  letter-spacing: .2px;
-}
-
-/* GitHub button */
-.project-gh {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 1px solid #e1e8f0;
-  background: #f0f4f8;
-  color: #2c3e50;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: .92rem;
-  transition: background .18s ease, border-color .18s ease, transform .18s ease;
-  white-space: nowrap;
-}
-
-.project-gh:hover {
-  background: #eaf4ff;
-  border-color: #9fb9d6;
-  transform: translateY(-1px);
-}
-
-.project-gh svg {
-  width: 18px; height: 18px;
-  fill: currentColor;
-  flex-shrink: 0;
-}
-
 /* ===== Publications (fixed + light) ===== */
 /* ===== Publications (styled like Experience) ===== */
 .pub-card {
   display: grid;
-  grid-template-columns: minmax(240px, 30%) 1fr;  /* به‌جای عدد ثابت 320px */
-  align-items: start;        /* متن بالای عکس منطبق بشه */
-  gap: 1.25rem;              /* فاصله مطمئن بین عکس و متن */
+  grid-template-columns: minmax(240px, 30%) 1fr; 
+  align-items: start;        
+  gap: 1.25rem;              
   padding: 1rem 1.25rem;
 
   border-radius: var(--exp-radius, 12px);
@@ -543,7 +372,6 @@ redirect_from:
   box-shadow: 0 12px 24px rgba(0,0,0,.08), var(--exp-glow-hover, 0 0 14px rgba(33,150,243,0.15));
 }
 
-/* Media column style مشابه exp-card__logo */
 .pub-media {
   position: relative;
   border-radius: 12px;
@@ -563,7 +391,6 @@ redirect_from:
   object-position: center;
 }
 
-/* badge را هماهنگ‌تر کن */
 .pub-badge {
   position: absolute;
   top: 10px;
@@ -839,7 +666,6 @@ redirect_from:
   line-height: 1.2;
   white-space: nowrap;
 
-  /* رنگ‌ها هماهنگ با theme */
   background: linear-gradient(
     135deg,
     var(--exp-grad-1, #edf5ff),
@@ -860,7 +686,6 @@ redirect_from:
   opacity: 0.85;
 }
 
-/* قابل کلیک */
 .chip-button {
   cursor: pointer;
 }
@@ -878,7 +703,6 @@ redirect_from:
   outline: none;
 }
 
-/* اگر خواستی چیپ‌های خاکستری‌تر برای وضعیت غیرفعال داشته باشی */
 .chip--muted {
   background: #f2f4f7;
   color: #5b6b7a;
@@ -886,7 +710,6 @@ redirect_from:
   box-shadow: none;
 }
 
-/* Responsive spacing برای مجموعه چیپ‌ها */
 .chip-group {
   display: flex;
   flex-wrap: wrap;
