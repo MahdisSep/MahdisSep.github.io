@@ -9,252 +9,162 @@ redirect_from:
 ---
 
 <style>
-
-/* ========== COLOR THEME: Warm Sunset ========== */
 :root {
-  /* Brand palette */
-  --orange-light: #ffe5b4;
-  --orange-base:  #ffb74d;
-  --orange-dark:  #ff8f00;
+  /* ========= Soft Blue Palette ========= */
+  --blue-verylight: #f2f8ff;
+  --blue-light: #d8eaff;
+  --blue-mid: #a9d3ff;
+  --blue-accent: #4a9eff;
+  --blue-deep: #1f6ed4;
 
-  /* Experience & cards */
-  --exp-bg: #fffaf5;
-  --exp-border: #ffe0b2;
-  --exp-accent: #ff8f00;
-  --badge-bg: #fff3e0;
-  --badge-text: #663c00;
+  /* ========= Experience & Card Variables ========= */
+  --exp-bg: var(--blue-verylight);
+  --exp-border: #e2edf8;
+  --exp-accent: var(--blue-accent);
+  --badge-bg: #eaf3ff;
+  --badge-text: #123c63;
 
-  /* Gradient edge + glow (warm) */
-  --exp-grad-1: #fff3c2;    /* pale yellow */
-  --exp-grad-2: #ffd580;    /* warm orange */
-  --exp-grad-3: #ffad42;    /* deeper amber */
-  --exp-glow: 0 16px 36px rgba(255, 179, 71, 0.25);
-  --exp-glow-hover: 0 24px 54px rgba(255, 128, 0, 0.35);
-  --exp-radius: 14px;
+  /* gradient border for exp/pubs */
+  --exp-grad-1: #cde4fa;
+  --exp-grad-2: #a7d8f5;
+  --exp-grad-3: #6fb7f0;
   --exp-bw: 1.6px;
+  --exp-radius: 14px;
+  --exp-glow: 0 16px 36px rgba(98, 160, 255, 0.16);
+  --exp-glow-hover: 0 24px 54px rgba(98, 160, 255, 0.22);
 
-  /* Cards, chips, projects */
-  --card-bg: #fffaf5;
-  --card-b: #ffe0b2;
-  --card-ac: #ff8f00;
-  --chip-bg: #fff3e0;
-  --chip-b: #ffd699;
-  --chip-text: #663c00;
-
-  /* Publications & projects */
-  --p-bg: #fffaf5;
-  --p-br: #ffe0b2;
-  --p-ac: #ff8f00;
-  --p-ac-2: #d96f00;
-  --p-text: #4a2900;
-  --p-ratio: 16/7;
-
-  /* Glow / gradient for projects */
-  --proj-radius: 14px;
-  --proj-bw: 1.6px;
-  --proj-bg: #fffaf5;
-  --proj-grad-1: #ffebc5;
-  --proj-grad-2: #ffc676;
-  --proj-grad-3: #ff9f1a;
-  --proj-glow: 0 16px 36px rgba(255, 157, 51, 0.22);
-  --proj-glow-hover: 0 22px 48px rgba(255, 138, 0, 0.28);
-
-  /* logos */
+  /* logo sizing */
   --exp-logo: 100px;
   --exp-lab-logo: 80px;
   --exp-lab-gap: 25px;
+
+  /* Projects */
+  --proj-grad-1: #d6e9ff;
+  --proj-grad-2: #a6d2ff;
+  --proj-grad-3: #72b4f5;
+  --proj-bg: var(--blue-verylight);
+  --proj-glow: 0 16px 36px rgba(60,140,255,0.15);
+  --proj-glow-hover: 0 22px 48px rgba(60,140,255,0.25);
+
+  /* Chips */
+  --chip-bg: #f3f8ff;
+  --chip-b: #d9e8fb;
+  --chip-text: #143a52;
 }
 
-/* Global text / body */
-body {
-  color: #4a2900;
-  background: #fffaf5;
-  background-size: cover;
-  background-attachment: fixed;
-}
+/* ========= Experience List ========= */
+.experience-list { display: grid; gap: 1.25rem; }
 
-a {
-  color: var(--exp-accent);
-  text-decoration: none;
-}
-a:hover { color: var(--orange-dark); }
-
-strong { color: #2e1500; }
-.year-title { color: #8c5200; }
-
-/* ====================== Experience & Education Cards ====================== */
-.experience-card,
-.education-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.25rem;
-  margin-bottom: 1rem;
-  padding: 1.25rem 1.5rem;
-
+.exp-card {
+  display: grid;
+  grid-template-columns: var(--exp-logo) 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem 1.25rem;
   border-radius: var(--exp-radius);
-  border: var(--exp-bw) solid transparent;
+
   background:
     linear-gradient(var(--exp-bg), var(--exp-bg)) padding-box,
-    linear-gradient(135deg,var(--exp-grad-1),var(--exp-grad-2) 55%,var(--exp-grad-3)) border-box;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.04), var(--exp-glow);
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-}
-.experience-card:hover,
-.education-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.08), var(--exp-glow-hover);
-}
-
-.experience-logo,
-.education-logo {
-  flex-shrink: 0;
-  width: var(--exp-logo);
-  height: var(--exp-logo);
-  background: #fff;
-  border-radius: 12px;
-  border: 1px solid var(--exp-border);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  overflow: hidden;
-}
-.experience-logo img,
-.education-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.experience-info,
-.education-info { flex: 1; display: grid; gap: .25rem; }
-
-.experience-title,
-.education-title {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #663c00;
-}
-.experience-title a:hover,
-.education-title a:hover { color: var(--orange-dark); }
-
-.experience-role,
-.education-role {
-  color: #8c5200;
-  font-style: italic;
-  font-size: 0.9rem;
-}
-.experience-topics,
-.education-topics {
-  color: #4a2900;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-@media (max-width:640px){
-  .experience-card,.education-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .experience-logo,.education-logo {
-    width:70px;height:70px;border-radius:10px;
-  }
-}
-
-/* ====================== Publications ====================== */
-.pub-card {
-  display: grid;
-  grid-template-columns: minmax(240px,30%) 1fr;
-  align-items: start;
-  gap: 1.25rem;
-  padding: 1rem 1.25rem;
-
-  border-radius: var(--exp-radius);
+    linear-gradient(135deg, var(--exp-grad-1), var(--exp-grad-2) 55%, var(--exp-grad-3)) border-box;
   border: var(--exp-bw) solid transparent;
-  background:
-    linear-gradient(var(--exp-bg),var(--exp-bg)) padding-box,
-    linear-gradient(135deg,var(--exp-grad-1),var(--exp-grad-2) 55%,var(--exp-grad-3)) border-box;
+
   box-shadow: 0 8px 16px rgba(0,0,0,.04), var(--exp-glow);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
-.pub-card:hover {
+
+.exp-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 24px rgba(0,0,0,.08), var(--exp-glow-hover);
 }
-.pub-media {
-  position: relative;
+
+.exp-card__logo {
+  width: var(--exp-logo);
+  height: var(--exp-logo);
+  border-radius: 12px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--exp-border);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Text styles */
+.exp-card__header { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.25rem .75rem; margin-bottom:.25rem; }
+.exp-card__role { font-size:1.05rem; margin:0; color:#13344e; }
+.exp-card__dates { font-size:.9rem; color:#5b6b7a; }
+.exp-card__org { font-weight:600; color:#234b6b; margin-bottom:.25rem; }
+.exp-card__summary { margin:.25rem 0 .5rem; color:#384b5a; }
+
+/* details section */
+.exp-card__details summary { cursor:pointer; margin-top:.35rem; color:var(--exp-accent); font-weight:600; }
+.exp-card__bullets { margin:.5rem 0 0 .9rem; }
+.exp-card__bullets li { margin:.15rem 0; }
+
+/* logos stacked */
+.exp-card__logos {
+  display: grid;
+  align-content: start;
+  grid-template-rows: var(--exp-lab-logo) var(--exp-lab-logo);
+  gap: var(--exp-lab-gap);
+  width: var(--exp-logo);
+}
+.exp-card__logos img {
+  width: 100%;
+  height: var(--exp-lab-logo);
+  object-fit: contain;
+  background: #fff;
   border-radius: 12px;
   border: 1px solid var(--exp-border);
-  background: #fff;
-  overflow: hidden;
-  aspect-ratio: 16/10;
-}
-.pub-media img { width:100%;height:100%;object-fit:contain; }
-.pub-badge {
-  position:absolute;top:10px;left:10px;
-  background:#fff3e0;
-  color:#ff8f00;
-  border:1px solid #ffd699;
-  font-size:.78rem;
-  font-weight:700;
-  padding:6px 10px;
-  border-radius:999px;
-  box-shadow:0 1px 3px rgba(0,0,0,.06);
-}
-.pub-body { display:grid;gap:10px; }
-.pub-title { font-size:1.05rem;font-weight:700;color:#663c00; }
-.pub-authors { font-size:.95rem;color:#7a4b00; }
-.pub-affils { font-size:.9rem;color:#a05b00; }
-.pub-chip {
-  display:inline-flex;align-items:center;gap:.35rem;
-  padding:.28rem .55rem;
-  background:var(--badge-bg);
-  color:var(--badge-text);
-  border:1px solid rgba(255,143,0,.2);
-  border-radius:999px;
-  font-size:.82rem;font-weight:600;
-  transition:background .15s ease,transform .15s ease;
-}
-.pub-chip:hover {
-  background:#fff0da;
-  transform:translateY(-1px);
 }
 
-/* ====================== Chips ====================== */
+/* responsive */
+@media (max-width:640px) {
+  .exp-card { grid-template-columns:60px 1fr; padding:.9rem; }
+  .exp-card__logo { width:60px; height:60px; border-radius:8px; }
+  .exp-card__logos { width:60px; grid-template-rows:44px 44px; gap:4px; }
+  .exp-card__logos img { height:44px; border-radius:8px; }
+}
+
+/* ========= Chips (soft blue) ========= */
 .chip, .chip-button {
-  display:inline-flex;align-items:center;gap:.45rem;
-  padding:.35rem .75rem;
-  border-radius:999px;
-  font-weight:700;font-size:.9rem;
-  background:linear-gradient(135deg,#fff3e0,#ffe0b2);
-  color:#4a2900;
-  border:1px solid #ffd699;
-  box-shadow:0 2px 5px rgba(255,170,0,0.15);
-  transition:all .2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--chip-text);
+  background: var(--chip-bg);
+  border: 1px solid var(--chip-b);
+  box-shadow: 0 2px 4px rgba(90,140,200,0.08);
+  transition: all 0.2s ease;
 }
-.chip-button { cursor:pointer; }
+
+.chip-button { cursor: pointer; }
+
 .chip-button:hover {
-  background:linear-gradient(135deg,#ffe6c0,#ffd18f);
-  transform:translateY(-1px);
-  box-shadow:0 5px 12px rgba(255,138,0,0.25);
+  background: #e6f1ff;
+  border-color: #c5defc;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 12px rgba(85,140,220,0.15);
 }
 
-/* ====================== Misc headings ====================== */
-.section-title {
-  font-size:1.8em;
-  color:#663c00;
-  border-bottom:2px solid #ffd699;
+/* Muted chip */
+.chip--muted {
+  background: #f2f4f7;
+  color: #5b6b7a;
+  border-color: #e0e6eb;
+  box-shadow: none;
 }
 
-/* Service list hover */
-.service-list li { background:#fffaf5; }
-.service-list li:hover { transform:translateX(5px); background:#fff3e0; }
-
-.load-more {
-  border:2px solid #ff8f00;
-  background:#fffaf5;
-  color:#ff8f00;
+/* Group of chips */
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
-.load-more:hover { background:#fff3e0; }
-
 </style>
+
 
 
 <!-- {% if site.google_scholar_stats_use_cdn %}
