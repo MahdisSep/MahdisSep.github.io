@@ -1,6 +1,7 @@
 ---
 permalink: /
-title: "About"
+title: ""
+excerpt: ""
 author_profile: true
 redirect_from: 
   - /about/
@@ -764,6 +765,17 @@ redirect_from:
 
 </style>
 
+<!-- {% if site.google_scholar_stats_use_cdn %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% else %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %} -->
+
+<span class='anchor' id='about-me'></span>
+
+
+# About Me  
 I’m **Mahdis Sepahvand**, a **Computer Engineering** undergraduate at **Shahid Beheshti University**.
 My academic and research interests lie at the intersection of **computer vision**, **deep learning**, **medical imaging**, and **generative & diffusion models**. I am also passionate about exploring **multimodal learning and data-driven applications** in **science** and **healthcare**.
 
@@ -776,7 +788,7 @@ You can reach me via:
 - [Email](mailto:Mahdissep18@gmail.com)
 - [Telegram](https://t.me/mahdissep)
 
----
+
 
 # Education
 
@@ -840,3 +852,179 @@ You can reach me via:
   <span class="chip">Persian — Native</span>
   <span class="chip">English — IELTS 6.5</span>
 </div>
+
+
+# Publications
+
+## Bachelor Thesis
+
+<div class="pub-card">
+  <div class="pub-media">
+    <span class="pub-badge is-progress">In Progress</span>
+    <img src="images/bsc-thesis.png" alt="Multimodal-AI-Odontogenic-Cyst-Diagnosis">
+  </div>
+
+  <div class="pub-body">
+    <h3 class="pub-title"> A multimodal AI framework for the diagnosis of Odontogenic Cysts</h3>
+
+    <!-- (Text unchanged) -->
+    <p class="pub-abstract">
+      This ongoing research project focuses on developing a multimodal deep learning framework for the diagnosis of odontogenic cysts.Our approach integrates data from panoramic radiography (radiomics), histopathology (digital pathology), and clinical/demographic records, enabling the model to learn complementary features from each modality.We fine-tuned the Qwen2.5-7B large multimodal model using the QLoRA optimization technique, achieving a diagnostic accuracy of up to 92%, significantly outperforming unimodal baselines.This work is still in progress and will be further expanded into a research paper in the near future. More updates coming soon!
+    </p>
+  </div>
+</div>
+
+
+# Experience
+For additional details about each experience, please see my CV or contact me.
+
+<!-- Teaching Assistant (full list, shown by default) -->
+  <article class="exp-card">
+    <img class="exp-card__logo" src="/images/Sbu-logo.png" alt="Shahid Beheshti University">
+    <div class="exp-card__body">
+      <header class="exp-card__header">
+        <h3 class="exp-card__role">Undergraduate Research and Teaching Assistant (Part-time)</h3>
+        <div class="exp-card__dates">Tehran, Iran</div>
+      </header>
+
+      <div class="exp-card__org">Shahid Beheshti University — Computer Science Faculty</div>
+
+      <p class="exp-card__summary">
+        Managed assignments, ran recitations, mentored projects, and managed teams as a head teaching assistant.
+      </p>
+
+      <ul class="exp-card__badges">
+        <li class="badge"><i class="fas fa-chalkboard-teacher"></i> Teaching</li>
+        <li class="badge"><i class="fas fa-brain"></i> RL/ML/AI</li>
+      </ul>
+
+      <details class="exp-card__details" open>
+        <summary>Course list</summary>
+        <ul class="exp-card__bullets">
+          <li><strong>Computer Vision (A collaborative project with the Faculty of Medicine, University of Tehran)</strong> — Fall 2025, Dr. Hamed Malek, Dr. Mahdavi</li>
+          <li><strong>Compiler Design (Head Teaching Assistant)</strong> — Fall 2024, Dr. Mehran Alidoost Nia</li>
+          <li><strong>Algorithm Design</strong> — Fall 2024, Dr. Farokh Legha Moazemi</li>
+          <li><strong>Formal Languages & Automata Theory Course (Head Teaching Assistant)</strong> — Spring 2024, Dr. Ramak Ghavami Zadeh</li>
+          <li><strong>Algorithm Design</strong> — Spring 2024, Dr. Ramak Ghavami Zadeh</li>
+          <li><strong>Advanced Programming</strong> — Spring 2023, Dr. Sadegh Ali Akbari</li>
+          <li><strong>Formal Languages & Automata Theory Course</strong> — Spring 2023, Dr. Ramak Ghavami Zadeh</li>
+          <li><strong>Introduction to Programming</strong> — Fall 2022, Dr. Sadegh Ali Akbari</li>
+        </ul>
+      </details>
+    </div>
+  </article>
+
+# Courses
+
+<section class="cert-grid">
+
+  <!-- IELTS -->
+  <article class="cert-card">
+    <img class="cert-card__logo" src="/images/ielts.jpg" alt="IELTS">
+    <div class="cert-card__body">
+      <h3 class="cert-card__title">IELTS Academic</h3>
+      <div class="cert-card__org">IELTS Official</div>
+      <div class="cert-card__meta">Issued Sep 2025</div>
+    </div>
+  </article>
+
+  <article class="cert-card">
+    <img class="cert-card__logo" src="/images/deeplearningai.jpg" alt="DeepLearning.AI">
+    <div class="cert-card__body">
+      <h3 class="cert-card__title">Unsupervised Learning, Recommenders, Reinforcement Learning</h3>
+      <div class="cert-card__org">DeepLearning.AI</div>
+      <div class="cert-card__meta">Issued Mar 2025</div>
+      <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/5HQYM7PKHX4Z">View credential</a>
+    </div>
+  </article>
+
+  <article class="cert-card">
+    <img class="cert-card__logo" src="/images/deeplearningai.jpg" alt="DeepLearning.AI">
+    <div class="cert-card__body">
+      <h3 class="cert-card__title">Advanced Learning Algorithms</h3>
+      <div class="cert-card__org">DeepLearning.AI</div>
+      <div class="cert-card__meta">Issued Oct 2024</div>
+      <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/LYD09SFN7KK8">View credential</a>
+    </div>
+  </article>
+
+  <article class="cert-card">
+    <img class="cert-card__logo" src="/images/deeplearningai.jpg" alt="DeepLearning.AI">
+    <div class="cert-card__body">
+      <h3 class="cert-card__title">Supervised Machine Learning: Regression and Classification</h3>
+      <div class="cert-card__org">DeepLearning.AI</div>
+      <div class="cert-card__meta">Issued Apr 2024</div>
+      <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/9M7SBTAHATYA">View credential</a>
+    </div>
+  </article>
+ 
+  <article class="cert-card">
+    <img class="cert-card__logo" src="/images/meta.jpg" alt="meta">
+    <div class="cert-card__body">
+      <h3 class="cert-card__title">Introduction to Databases</h3>
+      <div class="cert-card__org">Meta</div>
+      <div class="cert-card__meta">Issued Sep 2023</div>
+      <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/BBKN8JZBC2P5">View credential</a>
+    </div>
+  </article>
+
+  <article class="cert-card">
+    <img class="cert-card__logo" src="/images/Tehran.png" alt="UT">
+    <div class="cert-card__body">
+      <h3 class="cert-card__title">Deep Learning Course </h3>
+      <div class="cert-card__org">University of Tehran, ACM</div>
+      <div class="cert-card__meta">Issued Summer 2024</div>
+      <a class="cert-link" href="https://drive.google.com/file/d/1yM4jr7wKAeMP3Gsu9m0jof2VCjKjWLAb/view?usp=sharing">View credential</a>
+    </div>
+  </article>
+
+  
+  <article class="cert-card">
+    <img class="cert-card__logo" src="/images/irans.jpg" alt="IUST">
+    <div class="cert-card__body">
+      <h3 class="cert-card__title">Machine Learning and Data Science</h3>
+      <div class="cert-card__org">Iran University of science and technology, Computernic</div>
+      <div class="cert-card__meta">Issued Summer 2023</div>
+      <a class="cert-link" href="https://drive.google.com/file/d/1gukQEzuG4HfpNKtIw4E7LIabVlXEetH9/view?usp=sharing">View credential</a>
+    </div>
+  </article>
+
+   <article class="cert-card">
+    <img class="cert-card__logo" src="/images/Sbu-logo.png" alt="sbu">
+    <div class="cert-card__body">
+      <h3 class="cert-card__title">Introduction to linux</h3>
+      <div class="cert-card__org">Shahid Beheshti University</div>
+      <div class="cert-card__meta">Issued Summer 2022</div>
+      <a class="cert-link" href="https://drive.google.com/file/d/1Uc0ZVzI_57kB7DJfhhPUF26RCZf9XE-r/view?usp=sharing">View credential</a>
+    </div>
+  </article>
+
+   <article class="cert-card">
+    <img class="cert-card__logo" src="/images/Sbu-logo.png" alt="sbu">
+    <div class="cert-card__body">
+      <h3 class="cert-card__title">Fundamentals of Python</h3>
+      <div class="cert-card__org">Shahid Beheshti University</div>
+      <div class="cert-card__meta">Issued Summer 2022</div>
+      <a class="cert-link" href="https://drive.google.com/file/d/1zhIBX-m2hb-LuaCxnPBB0B6O9MrOv_Pr/view?usp=sharing">View credential</a>
+    </div>
+  </article>
+
+   <article class="cert-card">
+    <img class="cert-card__logo" src="/images/Sbu-logo.png" alt="sbu">
+    <div class="cert-card__body">
+      <h3 class="cert-card__title">Computer vision</h3>
+      <div class="cert-card__org">Shahid Beheshti University</div>
+      <div class="cert-card__meta">Issued Winter 2023</div>
+      <a class="cert-link" href="https://drive.google.com/file/d/1CHhlvweQD3QqxTDmC95tLj4Jf80qj20-/view?usp=sharing">View credential</a>
+    </div>
+  </article>
+
+</section>
+
+
+<!-- <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=HVZ1dytXl71ZnJux6Lqi9u_XgGZap1uRgqVjt2_TcTc"></script> -->
+
+<br>
+<br>
+<br>
+<br>

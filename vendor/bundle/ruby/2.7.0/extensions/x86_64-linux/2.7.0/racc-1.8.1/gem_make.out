@@ -1,0 +1,15 @@
+current directory: /mnt/c/Users/Shayan/Desktop/acad-homepage.github.io/vendor/bundle/ruby/2.7.0/gems/racc-1.8.1/ext/racc/cparse
+/home/shayan/.rbenv/versions/2.7.8/bin/ruby -I /home/shayan/.rbenv/versions/2.7.8/lib/ruby/2.7.0 -r ./siteconf20250829-29748-1xmmxm0.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/Shayan/Desktop/acad-homepage.github.io/vendor/bundle/ruby/2.7.0/gems/racc-1.8.1/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /mnt/c/Users/Shayan/Desktop/acad-homepage.github.io/vendor/bundle/ruby/2.7.0/gems/racc-1.8.1/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /mnt/c/Users/Shayan/Desktop/acad-homepage.github.io/vendor/bundle/ruby/2.7.0/gems/racc-1.8.1/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250829-29748-wwtzy0/racc
