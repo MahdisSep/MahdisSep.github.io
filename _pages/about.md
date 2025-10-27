@@ -1110,8 +1110,10 @@ You can reach me via:
 # Experience
 For additional details about each experience, please see my CV or contact me.
 
+<section class="experience-list">
+
   <article class="exp-card">
-    <!-- <img class="exp-card__logo" src="/images/Sbu-logo.png" alt="Shahid Beheshti University"> -->
+    <img class="exp-card__logo" src="/images/Sbu-logo.png" alt="Shahid Beheshti University">
     <div class="exp-card__body">
       <header class="exp-card__header">
         <h3 class="exp-card__role">Undergraduate Research and Teaching Assistant (Part-time)</h3>
@@ -1140,6 +1142,7 @@ For additional details about each experience, please see my CV or contact me.
       </details>
     </div>
   </article>
+</section>
 
 # Courses
 
