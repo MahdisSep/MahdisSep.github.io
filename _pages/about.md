@@ -826,30 +826,73 @@ redirect_from:
     gap: 8px;
     margin-top: 10px;
   }
-  .chip, .chip-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 6px 10px;
-    border-radius: 999px;
-    border: 1px solid #e1e8f0;
-    background: #f7f9fc;
-    color: #2c3e50;
-    font-weight: 700;
-    font-size: .9rem;
-    cursor: default;
-    user-select: none;
-  }
-  .chip-button {
-    cursor: pointer;
-    transition: background .15s ease, border-color .15s ease, transform .15s ease;
-  }
-  .chip-button:hover, .chip-button:focus {
-    background: #eaf4ff;
-    border-color: #9fb9d6;
-    transform: translateY(-1px);
-    outline: none;
-  }
+  /* ===== Chips & Chip Buttons (modern unified look) ===== */
+.chip,
+.chip-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  white-space: nowrap;
+
+  /* رنگ‌ها هماهنگ با theme */
+  background: linear-gradient(
+    135deg,
+    var(--exp-grad-1, #edf5ff),
+    var(--exp-grad-2, #e3f0ff)
+  );
+  color: #143a52;
+  border: 1px solid rgba(15, 123, 220, 0.15);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+
+  user-select: none;
+  cursor: default;
+  transition: all 0.2s ease;
+}
+
+.chip i,
+.chip-button i {
+  font-size: 0.95em;
+  opacity: 0.85;
+}
+
+/* قابل کلیک */
+.chip-button {
+  cursor: pointer;
+}
+
+.chip-button:hover,
+.chip-button:focus {
+  background: linear-gradient(
+    135deg,
+    var(--exp-grad-2, #d7eaff),
+    var(--exp-grad-3, #c9e3ff)
+  );
+  transform: translateY(-1px);
+  box-shadow: 0 5px 12px rgba(0, 102, 204, 0.1);
+  border-color: rgba(15, 123, 220, 0.25);
+  outline: none;
+}
+
+/* اگر خواستی چیپ‌های خاکستری‌تر برای وضعیت غیرفعال داشته باشی */
+.chip--muted {
+  background: #f2f4f7;
+  color: #5b6b7a;
+  border-color: #e0e6eb;
+  box-shadow: none;
+}
+
+/* Responsive spacing برای مجموعه چیپ‌ها */
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 
   /* 4.0 courses list */
   .course-list {
