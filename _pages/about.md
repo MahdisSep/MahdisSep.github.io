@@ -1005,11 +1005,15 @@ I’m eager to pursue **Master’s or direct PhD opportunities** where I can con
 Outside of academia, I enjoy writing, reading books, and listening to music, which help me stay creative and inspired.
 
 You can reach me via:
+<div class="edu-metrics" aria-label="Education metrics">
+  <a class="chip" href="mailto:Mahdissep18@gmail.com" title="Email" target="_blank">
+    Email
+  </a>
+  <a class="chip" href="https://t.me/mahdissep" title="Telegram" target="_blank">
+    Telegram
+  </a>
+</div>
 
-   <div class="edu-metrics" aria-label="Education metrics">
-      <span class="chip" title="Email">[Email](mailto:Mahdissep18@gmail.com)</span>
-      <span class="chip" title="Telegram">[Telegram](https://t.me/mahdissep)</span>
-    </div>
 
 
 # Education
