@@ -877,7 +877,7 @@ You can reach me via:
 
 # Experience
 For additional details about each experience, please see my CV or contact me.
-
+<section class="experience-list">
 <!-- Teaching Assistant (full list, shown by default) -->
   <article class="exp-card">
     <img class="exp-card__logo" src="/images/Sbu-logo.png" alt="Shahid Beheshti University">
@@ -913,6 +913,7 @@ For additional details about each experience, please see my CV or contact me.
       </details>
     </div>
   </article>
+</section>
 
 # Courses
 
