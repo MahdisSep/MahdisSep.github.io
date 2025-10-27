@@ -892,10 +892,6 @@ For additional details about each experience, please see my CV or contact me.
         Managed assignments, ran recitations, mentored projects, and managed teams as a head teaching assistant.
       </p>
 
-      <ul class="exp-card__badges">
-        <li class="badge"><i class="fas fa-chalkboard-teacher"></i> Teaching</li>
-        <li class="badge"><i class="fas fa-brain"></i> RL/ML/AI</li>
-      </ul>
 
       <details class="exp-card__details" open>
         <summary>Course list</summary>
