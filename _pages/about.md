@@ -39,7 +39,7 @@ redirect_from:
     --exp-radius: 14px;
     --exp-bw: 1.6px;                 /* border width */
     --exp-glow: 0 16px 36px rgba(15, 105, 189, 0.482);   /* outer glow */
-    --exp-glow-hover: 0 24px 54px rgba(7, 246, 242, 0.544);
+    --exp-glow-hover: 0 24px 54px rgba(163, 218, 213, 0.95);
 
     /* warm blue gradient edge */
     --exp-grad-1: #01f6f29a;           /* light cyan-blue */
@@ -250,7 +250,7 @@ redirect_from:
 
 .experience-title a:hover,
 .education-title a:hover {
-  color: var(--exp-accent, #0078d7);
+  color: var(--exp-accent, #9bcef7ff);
 }
 
 /* Role / Subtitle */
@@ -336,7 +336,7 @@ redirect_from:
   }
 
   .service-list li a:hover {
-    color: #2980b9;
+    color: #9bcef7ff;
   }
 
 /* Force horizontal images into one row */
