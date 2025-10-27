@@ -476,25 +476,21 @@ redirect_from:
 /* ===== Publications (fixed + light) ===== */
 /* ===== Publications (styled like Experience) ===== */
 .pub-card {
-  /* layout همان قبلی باقی می‌ماند */
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 18px;
-  align-items: stretch;
+  grid-template-columns: minmax(240px, 30%) 1fr;  /* به‌جای عدد ثابت 320px */
+  align-items: start;        /* متن بالای عکس منطبق بشه */
+  gap: 1.25rem;              /* فاصله مطمئن بین عکس و متن */
   padding: 1rem 1.25rem;
 
-  /* border-radius و سایه مشابه exp-card */
   border-radius: var(--exp-radius, 12px);
   border: var(--exp-bw, 2px) solid transparent;
   background:
     linear-gradient(var(--exp-bg, #fff), var(--exp-bg, #fff)) padding-box,
     linear-gradient(135deg, var(--exp-grad-1, #d1e5f8), var(--exp-grad-2, #a7d8f5) 55%, var(--exp-grad-3, #cde4fa)) border-box;
   box-shadow: 0 8px 16px rgba(0,0,0,.04), var(--exp-glow, 0 0 8px rgba(33,150,243,0.08));
-
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-  box-sizing: border-box;
   overflow: hidden;
 }
+
 
 .pub-card:hover {
   transform: translateY(-2px);
