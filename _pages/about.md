@@ -896,7 +896,7 @@ For additional details about each experience, please see my CV or contact me.
       <details class="exp-card__details" open>
         <summary>Course list</summary>
         <ul class="exp-card__bullets">
-          <li><strong>Computer Vision (A collaborative project with the Faculty of Medicine, University of Tehran)</strong> — Fall 2025, Dr. Hamed Malek, Dr. Mahdavi</li>
+          <li><strong>Computer Vision (A collaborative project with the Faculty of Medicine, University of Tehran)</strong> — Fall 2025, Dr. Hamed Malek, Dr. Nazanin Mahdavi</li>
           <li><strong>Compiler Design (Head Teaching Assistant)</strong> — Fall 2024, Dr. Mehran Alidoost Nia</li>
           <li><strong>Algorithm Design</strong> — Fall 2024, Dr. Farokh Legha Moazemi</li>
           <li><strong>Formal Languages & Automata Theory Course (Head Teaching Assistant)</strong> — Spring 2024, Dr. Ramak Ghavami Zadeh</li>
@@ -1024,9 +1024,9 @@ For additional details about each experience, please see my CV or contact me.
       Fundamentals of Python
     </div>
     <div class="experience-role">Shahid Beheshti University, Issued Summer 2022</div>
-  </div>
-  <a class="cert-link" href="https://drive.google.com/file/d/1zhIBX-m2hb-LuaCxnPBB0B6O9MrOv_Pr/view?usp=sharing">View credential</a>
+     <a class="cert-link" href="https://drive.google.com/file/d/1zhIBX-m2hb-LuaCxnPBB0B6O9MrOv_Pr/view?usp=sharing">View credential</a>
   <div class="experience-logo">
+  </div>
     <img src="../images/Sbu-logo.png" alt="sbu" />
   </div>
 </div>
@@ -1043,8 +1043,6 @@ For additional details about each experience, please see my CV or contact me.
     <img src="../images/Sbu-logo.png" alt="sbu" />
   </div>
 </div>
-
-</section>
 
 
 <!-- <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=HVZ1dytXl71ZnJux6Lqi9u_XgGZap1uRgqVjt2_TcTc"></script> -->
