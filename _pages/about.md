@@ -474,51 +474,56 @@ redirect_from:
 }
 
 /* ===== Publications (fixed + light) ===== */
+/* ===== Publications (styled like Experience) ===== */
 .pub-card {
+  /* layout همان قبلی باقی می‌ماند */
   display: grid;
-  grid-template-columns: 320px 1fr;  /* a bit wider media column */
+  grid-template-columns: 320px 1fr;
   gap: 18px;
   align-items: stretch;
-  background: #fff;                  /* force light */
-  border: 1px solid #e9ecef;
-  border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.05);
-  padding: 14px;
-  margin: 16px 0;
-  transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
-  overflow: hidden;                  /* stop media bleed */
+  padding: 1rem 1.25rem;
+
+  /* border-radius و سایه مشابه exp-card */
+  border-radius: var(--exp-radius, 12px);
+  border: var(--exp-bw, 2px) solid transparent;
+  background:
+    linear-gradient(var(--exp-bg, #fff), var(--exp-bg, #fff)) padding-box,
+    linear-gradient(135deg, var(--exp-grad-1, #d1e5f8), var(--exp-grad-2, #a7d8f5) 55%, var(--exp-grad-3, #cde4fa)) border-box;
+  box-shadow: 0 8px 16px rgba(0,0,0,.04), var(--exp-glow, 0 0 8px rgba(33,150,243,0.08));
+
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
   box-sizing: border-box;
-}
-.pub-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(0,0,0,.08);
-  border-color: #dee2e6;
+  overflow: hidden;
 }
 
-/* Media column */
-.pub-media {
-  position: relative;     /* so badge can sit inside */
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #eef2f5;
-  background: #fff;
-  aspect-ratio: 16/10;
-  box-sizing: border-box;
+.pub-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.08), var(--exp-glow-hover, 0 0 14px rgba(33,150,243,0.15));
 }
-/* IMPORTANT: no absolute positioning; no hover-zoom */
+
+/* Media column style مشابه exp-card__logo */
+.pub-media {
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid var(--exp-border, #e2e8f0);
+  background: #fff;
+  overflow: hidden;
+  aspect-ratio: 16/10;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+
 .pub-media img,
 .pub-media video {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;               /* show full content */
-  object-position: center;           /* center it */
+  object-fit: contain;
+  object-position: center;
 }
 
-/* Status badge */
+/* badge را هماهنگ‌تر کن */
 .pub-badge {
-  position: absolute;     /* pins it inside the pub-media box */
+  position: absolute;
   top: 10px;
   left: 10px;
   background: #edf5ff;
@@ -526,52 +531,74 @@ redirect_from:
   border: 1px solid #d6e6ff;
   font-size: .78rem;
   font-weight: 700;
-  letter-spacing: .2px;
   padding: 6px 10px;
   border-radius: 999px;
   box-shadow: 0 1px 3px rgba(0,0,0,.06);
-  z-index: 2;             /* make sure it sits above the image */
-}
-:root {
-  --badge-bg: #edf5ff;
-  --badge-fg: #1d4ed8;
-  --badge-br: #d6e6ff;
-}
-.pub-badge,
-.pub-badge.is-prep,
-.pub-badge.is-progress {
-  background: var(--badge-bg);
-  color: var(--badge-fg);
-  border-color: var(--badge-br);
 }
 
+/* Content Section */
+.pub-body {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
 
-/* Content */
-.pub-body { display: grid; gap: 10px; align-content: start; }
-.pub-title  { margin: 0; font-size: 1.05rem; line-height: 1.35; color: #2c3e50; font-weight: 800; }
-.pub-authors{ margin: 0; color: #555; font-size: .98rem; }
-.pub-affils { margin: 4px 0 0 0; color: #666; font-size: .9rem; }
+.pub-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  color: #143a52;
+}
 
-/* Action chips */
-.pub-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+.pub-authors {
+  font-size: .95rem;
+  color: #384b5a;
+}
+
+.pub-affils {
+  font-size: .9rem;
+  color: #5b6b7a;
+}
+
+/* Action chips هماهنگ با exp badges */
+.pub-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .25rem;
+}
+
 .pub-chip {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 6px 10px; border-radius: 8px;
-  border: 1px solid #e1e8f0; background: #f7f9fc;
-  color: #2c3e50; text-decoration: none; font-weight: 600; font-size: .9rem;
-  transition: background .15s ease, border-color .15s ease, transform .15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .28rem .55rem;
+  background: var(--badge-bg, #edf5ff);
+  color: var(--badge-text, #143a52);
+  border: 1px solid rgba(15,123,220,.12);
+  border-radius: 999px;
+  font-size: .82rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background .15s ease, transform .15s ease;
 }
-.pub-chip:hover, .pub-chip:focus {
-  background: #eaf4ff; border-color: #9fb9d6; transform: translateY(-1px);
-  outline: none;
-}
-.pub-chip svg { width: 16px; height: 16px; fill: currentColor; }
 
-/* Mobile */
-@media (max-width: 820px) {
-  .pub-card { grid-template-columns: 1fr; padding: 12px; }
-  .pub-media { aspect-ratio: 16/9; }
+.pub-chip:hover {
+  transform: translateY(-1px);
+  background: #eaf4ff;
 }
+
+/* Responsive */
+@media (max-width: 820px) {
+  .pub-card {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .pub-media {
+    aspect-ratio: 16/9;
+  }
+}
+
 
 /* If you previously added a dark-mode block for .pub-*, remove it.
    Otherwise, this forces light mode specifically for these cards. */
@@ -876,15 +903,6 @@ redirect_from:
 .exp-card__bullets{ margin:.5rem 0 0 .9rem; }
 .exp-card__bullets li{ margin:.15rem 0; }
 
-/* link underline */
-.exp-card__lab{ text-decoration:none; border-bottom:1px dotted rgba(15,123,220,.35); }
-.exp-card__lab:hover{ border-bottom-style:solid; }
-
-/* ------ LAB VARIANT: two stacked logos on the left ------ */
-.exp-card--lab{
-  /* keep same grid column width as single logo card */
-  grid-template-columns:var(--exp-logo) 1fr;
-}
 .exp-card__logos{
   display:grid; align-content:start;
   grid-template-rows: var(--exp-lab-logo) var(--exp-lab-logo);
@@ -901,7 +919,6 @@ redirect_from:
 @media (max-width:640px){
   .exp-card{ grid-template-columns:60px 1fr; padding:.9rem; }
   .exp-card__logo{ width:60px; height:60px; border-radius:8px; }
-  .exp-card--lab{ grid-template-columns:60px 1fr; }             /* same left column width on mobile */
   .exp-card__logos{ width:60px; grid-template-rows: 44px 44px; gap:4px; }
   .exp-card__logos img{ height:44px; border-radius:8px; }
 }
