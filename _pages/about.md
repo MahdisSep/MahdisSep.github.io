@@ -911,80 +911,101 @@ For additional details about each experience, please see my CV or contact me.
 
 # Courses
 
-<section class="cert-grid">
-
-  <!-- IELTS -->
-  <article class="cert-card">
-    <img class="cert-card__logo" src="/images/ielts.jpg" alt="IELTS">
-    <div class="cert-card__body">
-      <h3 class="cert-card__title">IELTS Academic</h3>
-      <div class="cert-card__org">IELTS Official</div>
-      <div class="cert-card__meta">Issued Sep 2025</div>
+<div class="experience-card">
+  <div class="experience-info">
+    <div class="experience-title">
+      IELTS Academic
     </div>
-  </article>
+    <div class="experience-role">IELTS Official, Issued Sep 2025</div>
+  </div>
+  <div class="experience-logo">
+    <img src="../images/ielts.jpg" alt="Logo" />
+  </div>
+</div>
 
-  <article class="cert-card">
-    <img class="cert-card__logo" src="/images/deeplearningai.jpg" alt="DeepLearning.AI">
-    <div class="cert-card__body">
-      <h3 class="cert-card__title">Unsupervised Learning, Recommenders, Reinforcement Learning</h3>
-      <div class="cert-card__org">DeepLearning.AI</div>
-      <div class="cert-card__meta">Issued Mar 2025</div>
-      <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/5HQYM7PKHX4Z">View credential</a>
+<div class="experience-card">
+  <div class="experience-info">
+    <div class="experience-title">
+      Unsupervised Learning, Recommenders, Reinforcement Learning
     </div>
-  </article>
+    <div class="experience-role">DeepLearning.AI, Issued Mar 2025</div>
+    <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/5HQYM7PKHX4Z">View credential</a>
+  </div>
+  <div class="experience-logo">
+    <img src="../images/deeplearningai.jpg" alt="DeepLearning.AI" />
+  </div>
+</div>
 
-  <article class="cert-card">
-    <img class="cert-card__logo" src="/images/deeplearningai.jpg" alt="DeepLearning.AI">
-    <div class="cert-card__body">
-      <h3 class="cert-card__title">Advanced Learning Algorithms</h3>
-      <div class="cert-card__org">DeepLearning.AI</div>
-      <div class="cert-card__meta">Issued Oct 2024</div>
-      <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/LYD09SFN7KK8">View credential</a>
+<div class="experience-card">
+  <div class="experience-info">
+    <div class="experience-title">
+      Advanced Learning Algorithms
     </div>
-  </article>
+    <div class="experience-role">DeepLearning.AI, Issued Oct 2024</div>
+    <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/LYD09SFN7KK8">View credential</a>
+  </div>
+  <div class="experience-logo">
+    <img src="../images/deeplearningai.jpg" alt="DeepLearning.AI" />
+  </div>
+</div>
 
-  <article class="cert-card">
-    <img class="cert-card__logo" src="/images/deeplearningai.jpg" alt="DeepLearning.AI">
-    <div class="cert-card__body">
-      <h3 class="cert-card__title">Supervised Machine Learning: Regression and Classification</h3>
-      <div class="cert-card__org">DeepLearning.AI</div>
-      <div class="cert-card__meta">Issued Apr 2024</div>
-      <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/9M7SBTAHATYA">View credential</a>
-    </div>
-  </article>
- 
-  <article class="cert-card">
-    <img class="cert-card__logo" src="/images/meta.jpg" alt="meta">
-    <div class="cert-card__body">
-      <h3 class="cert-card__title">Introduction to Databases</h3>
-      <div class="cert-card__org">Meta</div>
-      <div class="cert-card__meta">Issued Sep 2023</div>
-      <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/BBKN8JZBC2P5">View credential</a>
-    </div>
-  </article>
 
-  <article class="cert-card">
-    <img class="cert-card__logo" src="/images/Tehran.png" alt="UT">
-    <div class="cert-card__body">
-      <h3 class="cert-card__title">Deep Learning Course </h3>
-      <div class="cert-card__org">University of Tehran, ACM</div>
-      <div class="cert-card__meta">Issued Summer 2024</div>
-      <a class="cert-link" href="https://drive.google.com/file/d/1yM4jr7wKAeMP3Gsu9m0jof2VCjKjWLAb/view?usp=sharing">View credential</a>
+<div class="experience-card">
+  <div class="experience-info">
+    <div class="experience-title">
+      Supervised Machine Learning: Regression and Classification
     </div>
-  </article>
+    <div class="experience-role">DeepLearning.AI, Issued Apr 2024</div>
+    <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/9M7SBTAHATYA">View credential</a>
+  </div>
+  <div class="experience-logo">
+    <img src="../images/deeplearningai.jpg" alt="DeepLearning.AI" />
+  </div>
+</div>
 
+
+<div class="experience-card">
+  <div class="experience-info">
+    <div class="experience-title">
+      Introduction to Databases
+    </div>
+    <div class="experience-role">Meta, Issued Sep 2023</div>
+    <a class="cert-link" href="https://www.coursera.org/account/accomplishments/records/BBKN8JZBC2P5">View credential</a>
+  </div>
+  <div class="experience-logo">
+    <img src="../images/meta.jpg" alt="meta" />
+  </div>
+</div>
+
+<div class="experience-card">
+  <div class="experience-info">
+    <div class="experience-title">
+      Deep Learning Course
+    </div>
+    <div class="experience-role">University of Tehran, ACM, Issued Summer 2024</div>
+    <a class="cert-link" href="https://drive.google.com/file/d/1yM4jr7wKAeMP3Gsu9m0jof2VCjKjWLAb/view?usp=sharing">View credential</a>
+  </div>
+  <div class="experience-logo">
+    <img src="../images/Tehran.png" alt="UT" />
+  </div>
+</div>
   
-  <article class="cert-card">
-    <img class="cert-card__logo" src="/images/irans.jpg" alt="IUST">
-    <div class="cert-card__body">
-      <h3 class="cert-card__title">Machine Learning and Data Science</h3>
-      <div class="cert-card__org">Iran University of science and technology, Computernic</div>
-      <div class="cert-card__meta">Issued Summer 2023</div>
-      <a class="cert-link" href="https://drive.google.com/file/d/1gukQEzuG4HfpNKtIw4E7LIabVlXEetH9/view?usp=sharing">View credential</a>
-    </div>
-  </article>
 
-   <article class="cert-card">
+
+<div class="experience-card">
+  <div class="experience-info">
+    <div class="experience-title">
+      Machine Learning and Data Science
+    </div>
+    <div class="experience-role">Iran University of science and technology, Computernic, Issued Summer 2023</div>
+    <a class="cert-link" href="https://drive.google.com/file/d/1gukQEzuG4HfpNKtIw4E7LIabVlXEetH9/view?usp=sharing">View credential</a>
+  </div>
+  <div class="experience-logo">
+    <img src="../images/irans.jpg" alt="Logo" />
+  </div>
+</div>
+
+   <!-- <article class="cert-card">
     <img class="cert-card__logo" src="/images/Sbu-logo.png" alt="sbu">
     <div class="cert-card__body">
       <h3 class="cert-card__title">Introduction to linux</h3>
@@ -1014,7 +1035,7 @@ For additional details about each experience, please see my CV or contact me.
     </div>
   </article>
 
-</section>
+</section> -->
 
 
 <!-- <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=HVZ1dytXl71ZnJux6Lqi9u_XgGZap1uRgqVjt2_TcTc"></script> -->
