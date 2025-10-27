@@ -10,159 +10,79 @@ redirect_from:
 
 <style>
 :root {
-  /* ========= Soft Blue Palette ========= */
-  --blue-verylight: #f2f8ff;
-  --blue-light: #d8eaff;
-  --blue-mid: #a9d3ff;
-  --blue-accent: #4a9eff;
-  --blue-deep: #1f6ed4;
+  /* brand blues (softened) */
+  --blue-light: #f1f9ff;     /* خیلی روشن‌تر از قبل */
+  --blue-base: #33aaff;      /* ملایم‌تر از 0095dd */
+  --blue-dark: #0073b5;      /* روشن‌تر از 006f9a */
 
-  /* ========= Experience & Card Variables ========= */
-  --exp-bg: var(--blue-verylight);
-  --exp-border: #e2edf8;
-  --exp-accent: var(--blue-accent);
-  --badge-bg: #eaf3ff;
-  --badge-text: #123c63;
+  /* publications sizing */
+  --pub-left-col-basis: 40%;
+  --pub-left-col-max: 300px;
+  --pub-img-col-h: 340px;
+  --pub-img-gap: 8px;
 
-  /* gradient border for exp/pubs */
-  --exp-grad-1: #cde4fa;
-  --exp-grad-2: #a7d8f5;
-  --exp-grad-3: #6fb7f0;
-  --exp-bw: 1.6px;
+  /* experience & certs vars (soft blue tint) */
+  --exp-bg: #fbfdff; /* نزدیک به سفید */
+  --exp-border: #eaf2fa;
+  --exp-accent: #1b8ae5;
+  --badge-bg: #f2f8ff;
+  --badge-text: #0b3d68;
+
+  --card-bg: #fbfdff;
+  --card-b: #eaf2fa;
+  --card-ac: #1b8ae5;
+
+  --chip-bg: #f5faff;
+  --chip-b: #deebf8;
+  --chip-text: #0b3d68;
+
+  --p-bg: #fbfdff;
+  --p-br: #eaf2fa;
+  --p-ac: #1b8ae5;
+  --p-ac-2: #0a5cb1;
+  --p-text: #133a55;
+  --p-ratio: 16/7;
+
+  --pub-img-eps: 6px;
+  --rb-h: 42px;
+  --rb-gap: 6px;
+
+  /* Glow / gradient border for Experience cards (softer, brighter) */
   --exp-radius: 14px;
-  --exp-glow: 0 16px 36px rgba(98, 160, 255, 0.16);
-  --exp-glow-hover: 0 24px 54px rgba(98, 160, 255, 0.22);
+  --exp-bw: 1.6px;
+  --exp-glow: 0 16px 36px rgba(27, 138, 229, 0.22);
+  --exp-glow-hover: 0 24px 54px rgba(71, 198, 255, 0.35);
 
-  /* logo sizing */
+  /* gentle gradient */
+  --exp-grad-1: #b6e6ff;  /* very light cyan */
+  --exp-grad-2: #6dc7ff;  /* soft sky blue */
+  --exp-grad-3: #4096e3;  /* mild royal blue */
+
+  /* logo sizes */
   --exp-logo: 100px;
   --exp-lab-logo: 80px;
   --exp-lab-gap: 25px;
-
-  /* Projects */
-  --proj-grad-1: #d6e9ff;
-  --proj-grad-2: #a6d2ff;
-  --proj-grad-3: #72b4f5;
-  --proj-bg: var(--blue-verylight);
-  --proj-glow: 0 16px 36px rgba(60,140,255,0.15);
-  --proj-glow-hover: 0 22px 48px rgba(60,140,255,0.25);
-
-  /* Chips */
-  --chip-bg: #f3f8ff;
-  --chip-b: #d9e8fb;
-  --chip-text: #143a52;
 }
 
-/* ========= Experience List ========= */
-.experience-list { display: grid; gap: 1.25rem; }
+:root {
+  /* Projects (gradient edge + glow) */
+  --proj-radius: 14px;
+  --proj-bw: 1.6px;
+  --proj-bg: #fbfdff;
+  --proj-glow: 0 16px 36px rgba(27,138,229,.18);
+  --proj-glow-hover: 0 22px 48px rgba(71,198,255,.25);
 
-.exp-card {
-  display: grid;
-  grid-template-columns: var(--exp-logo) 1fr;
-  gap: 1rem;
-  align-items: start;
-  padding: 1rem 1.25rem;
-  border-radius: var(--exp-radius);
+  /* gradient edge harmonized with Experience */
+  --proj-grad-1: #c3ecff;
+  --proj-grad-2: #7dc9ff;
+  --proj-grad-3: #417ecf;
 
-  background:
-    linear-gradient(var(--exp-bg), var(--exp-bg)) padding-box,
-    linear-gradient(135deg, var(--exp-grad-1), var(--exp-grad-2) 55%, var(--exp-grad-3)) border-box;
-  border: var(--exp-bw) solid transparent;
-
-  box-shadow: 0 8px 16px rgba(0,0,0,.04), var(--exp-glow);
-  transition: transform .2s ease, box-shadow .2s ease;
+  /* media sizing for project cards */
+  --proj-media-w: 300px;
+  --proj-media-ratio: 16/10;
 }
 
-.exp-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(0,0,0,.08), var(--exp-glow-hover);
-}
-
-.exp-card__logo {
-  width: var(--exp-logo);
-  height: var(--exp-logo);
-  border-radius: 12px;
-  object-fit: contain;
-  background: #fff;
-  border: 1px solid var(--exp-border);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-/* Text styles */
-.exp-card__header { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.25rem .75rem; margin-bottom:.25rem; }
-.exp-card__role { font-size:1.05rem; margin:0; color:#13344e; }
-.exp-card__dates { font-size:.9rem; color:#5b6b7a; }
-.exp-card__org { font-weight:600; color:#234b6b; margin-bottom:.25rem; }
-.exp-card__summary { margin:.25rem 0 .5rem; color:#384b5a; }
-
-/* details section */
-.exp-card__details summary { cursor:pointer; margin-top:.35rem; color:var(--exp-accent); font-weight:600; }
-.exp-card__bullets { margin:.5rem 0 0 .9rem; }
-.exp-card__bullets li { margin:.15rem 0; }
-
-/* logos stacked */
-.exp-card__logos {
-  display: grid;
-  align-content: start;
-  grid-template-rows: var(--exp-lab-logo) var(--exp-lab-logo);
-  gap: var(--exp-lab-gap);
-  width: var(--exp-logo);
-}
-.exp-card__logos img {
-  width: 100%;
-  height: var(--exp-lab-logo);
-  object-fit: contain;
-  background: #fff;
-  border-radius: 12px;
-  border: 1px solid var(--exp-border);
-}
-
-/* responsive */
-@media (max-width:640px) {
-  .exp-card { grid-template-columns:60px 1fr; padding:.9rem; }
-  .exp-card__logo { width:60px; height:60px; border-radius:8px; }
-  .exp-card__logos { width:60px; grid-template-rows:44px 44px; gap:4px; }
-  .exp-card__logos img { height:44px; border-radius:8px; }
-}
-
-/* ========= Chips (soft blue) ========= */
-.chip, .chip-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: var(--chip-text);
-  background: var(--chip-bg);
-  border: 1px solid var(--chip-b);
-  box-shadow: 0 2px 4px rgba(90,140,200,0.08);
-  transition: all 0.2s ease;
-}
-
-.chip-button { cursor: pointer; }
-
-.chip-button:hover {
-  background: #e6f1ff;
-  border-color: #c5defc;
-  transform: translateY(-1px);
-  box-shadow: 0 5px 12px rgba(85,140,220,0.15);
-}
-
-/* Muted chip */
-.chip--muted {
-  background: #f2f4f7;
-  color: #5b6b7a;
-  border-color: #e0e6eb;
-  box-shadow: none;
-}
-
-/* Group of chips */
-.chip-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
+/* keep all other classes the same! */
 </style>
 
 
