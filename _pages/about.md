@@ -666,14 +666,15 @@ redirect_from:
   line-height: 1.2;
   white-space: nowrap;
 
+  
   background: linear-gradient(
     135deg,
-    var(--exp-grad-1, #edf5ff),
-    var(--exp-grad-2, #e3f0ff)
+    #f8fcff,    
+    #eaf6ff    
   );
-  color: #143a52;
-  border: 1px solid rgba(15, 123, 220, 0.15);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+  color: #1e4a70; 
+  border: 1px solid rgba(15, 123, 220, 0.08); 
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
 
   user-select: none;
   cursor: default;
@@ -683,7 +684,7 @@ redirect_from:
 .chip i,
 .chip-button i {
   font-size: 0.95em;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 .chip-button {
@@ -694,19 +695,19 @@ redirect_from:
 .chip-button:focus {
   background: linear-gradient(
     135deg,
-    var(--exp-grad-2, #d7eaff),
-    var(--exp-grad-3, #c9e3ff)
+    #edf8ff,
+    #dff2ff
   );
   transform: translateY(-1px);
-  box-shadow: 0 5px 12px rgba(0, 102, 204, 0.1);
-  border-color: rgba(15, 123, 220, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.08);
+  border-color: rgba(15, 123, 220, 0.18);
   outline: none;
 }
 
 .chip--muted {
-  background: #f2f4f7;
-  color: #5b6b7a;
-  border-color: #e0e6eb;
+  background: #f9fbfd;
+  color: #6b7c8a;
+  border-color: #e7edf3;
   box-shadow: none;
 }
 
@@ -715,6 +716,7 @@ redirect_from:
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
 
 
   /* 4.0 courses list */
