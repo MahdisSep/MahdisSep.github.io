@@ -1237,10 +1237,10 @@ For additional details about each experience, please see my CV or contact me.
 <div class="experience-card">
   <div class="experience-info">
     <div class="experience-title">
-      Introduction to linux
+      Computer vision
     </div>
-    <div class="experience-role">Shahid Beheshti University, Issued Summer 2022</div>
-    <a class="cert-link" href="https://drive.google.com/file/d/1Uc0ZVzI_57kB7DJfhhPUF26RCZf9XE-r/view?usp=sharing">View credential</a>
+    <div class="experience-role">Shahid Beheshti University, Issued Winter 2023</div>
+    <a class="cert-link" href="https://drive.google.com/file/d/1CHhlvweQD3QqxTDmC95tLj4Jf80qj20-/view?usp=sharing">View credential</a>
   </div>
   <div class="experience-logo">
     <img src="../images/Sbu-logo.png" alt="sbu" />
@@ -1263,16 +1263,15 @@ For additional details about each experience, please see my CV or contact me.
 <div class="experience-card">
   <div class="experience-info">
     <div class="experience-title">
-      Computer vision
+      Introduction to linux
     </div>
-    <div class="experience-role">Shahid Beheshti University, Issued Winter 2023</div>
-    <a class="cert-link" href="https://drive.google.com/file/d/1CHhlvweQD3QqxTDmC95tLj4Jf80qj20-/view?usp=sharing">View credential</a>
+    <div class="experience-role">Shahid Beheshti University, Issued Summer 2022</div>
+    <a class="cert-link" href="https://drive.google.com/file/d/1Uc0ZVzI_57kB7DJfhhPUF26RCZf9XE-r/view?usp=sharing">View credential</a>
   </div>
   <div class="experience-logo">
     <img src="../images/Sbu-logo.png" alt="sbu" />
   </div>
 </div>
-
 
 <!-- <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=HVZ1dytXl71ZnJux6Lqi9u_XgGZap1uRgqVjt2_TcTc"></script> -->
 
